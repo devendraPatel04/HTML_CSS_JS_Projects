@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Shantell+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400&display=swap');
+
+:root{
+    --main-bg-color:rgb(150, 150, 221);
+    --font1: 'Balthazar', serif;
+    --font2: 'Shantell Sans', cursive;
+    --font3: 'Hind', sans-serif;
+}
+
+.max-width-1 {
+    max-width: 80vw;
+}
+
+.max-width-2 {
+    max-width: 60vw;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.btn {
+    padding: 0 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: var(--font1);
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover{
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
+.form-input{
+    padding: 1px 5px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 13px;
+    font-family: var(--font1);
+}
