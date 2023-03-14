@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(39, 7, 7);
+    color: white;
+    height: 50px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Shantell Sans', sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+
+}
+
+.gameContainer{
+    background-color: rgb(219, 198, 219);
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    /* padding: 2px; */
+    /* overflow: hidden; */
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family:'Shantell Sans', sans-serif ;
+    margin: 5px;
+    position: relative;
+}
+
+.line{
+    background-color: black;
+    position: absolute;
+    width: 0vw;
+    height: 3px; 
+    transform: translate(0vw, 0vw) rotate(0deg);
+    transition: 1s ease-in-out;
+}
+
+.box{
+    border:2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(187, 187, 233);
+    cursor: pointer;
+}
+
+.gameInfo{
+    padding: 0 34px;
+    font-family:'Shantell Sans', sans-serif 
+}
+
+.imgbox img{
+    width:0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+    border-right:0 ;
+}
+
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    padding: 5px;
+    margin: 5px;
+    font-weight: bolder;
+    background-color: rgb(230, 210, 248);
+    cursor: pointer;
+}
+
+/* media query */
+@media screen and (max-width:900px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .buttonBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gameContainer{
+        min-height: 80vh;
+    }
+    .container{
+        /* min-height: 50vh; */
+        /* min-width: 70vw; */
+        grid-template-columns: repeat(3,25vw);
+        grid-template-rows: repeat(3,25vw);
+        position: relative;
+
+    }
+    .imgbox{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .line{
+        top:17.5vh;
+        right:22.5vw;
+        /* width: 100vw; */
+    }
+}
