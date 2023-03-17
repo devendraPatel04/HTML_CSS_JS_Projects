@@ -8,6 +8,18 @@
     --font3: 'Hind', sans-serif;
 }
 
+.font1{
+    font-family: var(--font1);
+}
+
+.font2{
+    font-family: var(--font2);
+}
+
+.font3{
+    font-family: var(--font3);
+}
+
 .max-width-1 {
     max-width: 80vw;
 }
@@ -18,6 +30,11 @@
 
 .m-auto {
     margin: auto;
+}
+
+.my-2{
+    margin-bottom: 12px;
+    margin-top: 12px;
 }
 
 .btn {

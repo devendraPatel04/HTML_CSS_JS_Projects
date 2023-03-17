@@ -5,12 +5,15 @@
 }
 
 .navigation {
+    margin-top: 10px;
     font-family: var(--font1);
     height: 74px;
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:sticky;
+    top:-20px;
 }
 
 .nav-left {
@@ -18,11 +21,17 @@
     display: flex;
 }
 
+.nav-left span{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
 .nav-left ul {
     display: flex;
     align-items: center;
     margin: 0px 30px;
-    font-size: 17px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .nav-left ul li {
@@ -44,11 +53,25 @@
 .nav-right {}
 
 .content {
-    height: 270px;
-    background-color: rgb(233, 233, 245);
+    height: 395px;
+    /* background-color: rgb(233, 233, 245); */
     display: flex;
     margin-top: 32px;
-    padding: 9px;
+    /* padding: 9px; */
+    position: relative;
+    /* background-image: url("/img/11.svg"); */
+}
+
+.content::after{
+    content: "";
+    background-image: url("/img/11.svg");
+    position: absolute;
+    /* object-fit: cover; */
+    width: 100%;
+    height: inherit;
+    /* padding: 50px; */
+    opacity: 0.15;
+    border-radius: 15px;
 }
 
 .content-left {
@@ -58,10 +81,12 @@
     /* align-items: center; */
     justify-content: center;
     flex-direction: column;
+    padding: 20px;
 }
 
 .content-right {
     /* width: 50%; */
+    padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +98,42 @@
     border-radius: 50%;
 }
 
+.home-articles{
+    /* margin-top: 25px; */
+    background-color:rgb(233, 233, 245);
+    padding: 20px;
+}
+
+.home-article{
+    display: flex;
+    margin: 21px;
+}
+
+.home-article-content{
+    align-self: center;
+    padding:25px;
+}
+
+.home-article-content a{
+    text-decoration: none;
+    color:black;
+}
+
+.home-article img{
+    width: 300px;
+}
+
 .footer {
+    margin-top: 20px;
     height: 50px;
-    /* background-color: blueviolet; */
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    flex-direction: column;
+}
+
+.footer a{
+    color:black; 
 }
