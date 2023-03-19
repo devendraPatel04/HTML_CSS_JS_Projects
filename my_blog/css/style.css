@@ -82,6 +82,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 20px;
+    z-index: 1;
 }
 
 .content-right {
@@ -102,6 +103,20 @@
     /* margin-top: 25px; */
     background-color:rgb(233, 233, 245);
     padding: 20px;
+    position:relative;
+}
+
+.year-box{
+    position:absolute;
+    /* background-color: red; */
+    right:10px;
+    top: 84px;
+    width:100px;
+    height: 200px;
+}
+
+.year-box div{
+    margin: 4 px 0px;
 }
 
 .home-article{
